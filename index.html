@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Skilled Tech Portfolio</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 1.25rem;
+            right: 1.25rem; 
+            z-index: 50;
+            padding: 0.75rem; 
+            border-radius: 9999px; 
+            background-color: #2563eb;
+            color: #fff;
+            box-shadow: 0 10px 15px -3px rgba(37,99,235,0.1), 0 4px 6px -4px rgba(37,99,235,0.1);
+            transition-property: opacity;
+            transition-duration: 300ms;
+        }
+        section {
+            scroll-margin-top: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <button id="scrollTopBtn" style="opacity:0; pointer-events:none;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Developer Rono</a>
+            <div class="flex items-center space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#work" class="text-gray-600 hover:text-blue-600 transition-colors">Work</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-white py-20 md:py-32 flex items-center justify-center text-center">
+        <div class="max-w-4xl px-4">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                A creative problem-solver specializing in <span class="text-blue-600">UI/UX, IT Support, and Web Development</span>.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                I build and maintain technology solutions that are not only functional but also user-friendly and reliable.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#work" class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-700 transition-colors">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-6 py-3 bg-white text-blue-600 rounded-full font-semibold border border-blue-600 hover:bg-blue-50 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <img src="images/myphoto.jpg" alt="Your professional headshot" class="rounded-3xl shadow-lg w-full h-auto">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-extrabold text-gray-900 mb-4">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Hello! My name is Rono, and I am a tech professional based in Kenya, Nairobi. I leverage my diverse background in UI/UX design, web development, and IT support to build comprehensive and user-centered solutions. My approach combines creative problem-solving with technical expertise to create products that are not only beautiful but also robust and scalable.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        I am passionate about the intersection of human-centered design and technical implementation. Whether I am crafting an intuitive user flow or troubleshooting a network issue, my goal is always to deliver a seamless and efficient experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white rounded-3xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600">
+                        User Research, Wireframing, Prototyping, Usability Testing, Figma, Adobe XD.
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Web Development</h3>
+                    <p class="text-gray-600">
+                        HTML, CSS, JavaScript, React, Tailwind CSS, Version Control (Git).
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">IT Support</h3>
+                    <p class="text-gray-600">
+                        Hardware & Software Troubleshooting, Network Configuration, System Administration, Customer Support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center text-gray-900 mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/itsupport.jpeg" alt="UI/UX Project" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">UI/UX Case Study</h3>
+                        <p class="text-gray-600 mb-4">
+                            A brief description of this UI/UX project. Explain your role and the problem you solved.
+                        </p>
+                        <a href="viewcases.html" class="inline-block text-blue-600 font-semibold hover:underline">
+                            View Case Study &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/webdev.jpeg" alt="Web Development Project" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Web Development Project</h3>
+                        <p class="text-gray-600 mb-4">
+                            A brief description of this web development project. Explain your role and the technologies used.
+                        </p>
+                        <a href="webviewcases.html" class="webviewcases.html inline-block text-blue-600 font-semibold hover:underline">
+                            View Project &rarr;
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="images/itsupport.jpeg" alt="IT Support Project" class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">IT Support Case Study</h3>
+                        <p class="text-gray-600 mb-4">
+                            A brief description of this IT support project. Explain the problem, your solution, and the result.
+                        </p>
+                        <a href="itsupportcases.html" class="itsupportviewcases.html inline-block text-blue-600 font-semibold hover:underline">
+                            View Case Study &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Let's Connect</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                I'm currently open to new opportunities and collaborations. Feel free to get in touch!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="mailto:developer.rono@gmail.com" class="px-6 py-3 bg-blue-600 text-white rounded-full font-semibold shadow-lg hover:bg-blue-700 transition-colors">
+                    Email Me
+                </a>
+                <a href="www.linkedin.com/in/developer-rono-301589349" target="_blank" class="px-6 py-3 bg-white text-blue-600 rounded-full font-semibold border border-blue-600 hover:bg-blue-50 transition-colors">
+                    Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-10 text-center">
+        <p>&copy; 2025 Rono. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const showButtonOnScroll = 200;
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > showButtonOnScroll) {
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.pointerEvents = 'auto';
+            } else {
+                scrollTopBtn.style.opacity = '0';
+                scrollTopBtn.style.pointerEvents = 'none';
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
